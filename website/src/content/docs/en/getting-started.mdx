@@ -1,0 +1,39 @@
+---
+title: Getting Started
+description: Getting started with SpaceDragon.
+tableOfContents: false
+editUrl: false
+next: false
+hero:
+  title: SpaceDragon
+  tagline: Simple wiki to help you get started with SpaceDragon.
+  actions:
+    - text: Get started
+      icon: rocket
+      link: /en/install/
+      variant: primary
+---
+
+import { CardGrid } from '@astrojs/starlight/components'
+import Card from '../../../components/Landing/Card.astro'
+import ListCard from '../../../components/Landing/ListCard.astro'
+import SplitCard from '../../../components/Landing/SplitCard.astro'
+
+<CardGrid>
+  <Card title="What is SpaceDragon?" icon="information">
+    SpaceDragon is DragonForgeCode's main [Astro](https://astro.build/) creation CLI
+  </Card>
+
+  <Card title="A great tool, for a great framwork" icon="star">
+    We love using Astro, in fact all but 1 of our websites uses Astro, so we made this tool to make making our normal sutup eaisy using create-t3-app as the launch pad
+  </Card>
+
+  <SplitCard title="Start a new project" icon="rocket">
+    ```sh
+    # create a new project with npm
+    npm create @dragonforgecode/spacedragon@latest
+    ```
+    
+    Our [installation guide](/en/install/auto/) has step-by-step instructions for installing Astro using our CLI wizard.
+  </SplitCard>
+</CardGrid>

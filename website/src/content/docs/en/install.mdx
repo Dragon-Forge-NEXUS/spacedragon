@@ -1,0 +1,51 @@
+---
+title: Install Astro with SpaceDragon
+description: 'How to install Astro with NPM, PNPM, or Yarn via the SpaceDragon CLI tool.'
+---
+import PackageManagerTabs from '../../../components/tabs/PackageManagerTabs.astro'
+
+#### Prerequisites
+
+- **Node.js** - `v18.14.1` or higher.
+- **Text editor** - We recommend [VS Code](https://code.visualstudio.com/) with the [Official Astro extension](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode).
+- **Terminal** - SpaceDragon and Astro are accessed through their command-line interfaces (CLI).
+
+#### Installation
+
+
+:::caution[Known Error]
+currently when using the CLI a error will popup, but it (as far as we know) doesn't effect the CLI's functionality
+:::
+
+## 1. Run the Setup Wizard
+
+Run the following command in your terminal to start the SpaceDragon install wizard:
+
+<PackageManagerTabs>
+  <Fragment slot="npm">
+  ```shell
+  # create a new project with npm
+  npm create @dragonforgecode/spacedragon@latest
+  ```
+  </Fragment>
+  <Fragment slot="pnpm">
+  ```shell
+  # create a new project with pnpm
+  pnpm create @dragonforgecode/spacedragon@latest
+  ```
+  </Fragment>
+  <Fragment slot="yarn">
+  ```shell
+  # create a new project with yarn
+  yarn create @dragonforgecode/spacedragon
+  ```
+  </Fragment>
+</PackageManagerTabs>
+
+Just like the base `create-astro` you can run `create @dragonforgecode/spacedragon` anywhere on your machine, so there's no need to create a new empty directory for your project before you begin. If you don't have an empty directory yet for your new project, the wizard will help create one for you automatically.
+
+If all goes well, you should see a "Next steps:" message followed by some recommended next steps. `cd` into your new project directory to begin using Astro.
+
+If you skipped the `npm install` step during the CLI wizard, then be sure to install your dependencies before continuing.
+
+From here, it is just like normal Astro development, so you should head over to [docs.astro.build](https://docs.astro.build/) and continue from there!

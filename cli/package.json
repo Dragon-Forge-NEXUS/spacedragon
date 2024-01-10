@@ -1,6 +1,6 @@
 {
-  "name": "@dragonforgecode/create-spacedragon",
-  "version": "1.0.2",
+  "name": "create-spacedragon",
+  "version": "1.0.3",
   "description": "DragonForgeCode's Base Astro config built on create-t3-app",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,7 @@
   "type": "module",
   "exports": "./dist/index.js",
   "bin": {
-    "create-spacedragon": "./dist/index.js"
+    "create-spacedragon": "dist/index.js"
   },
   "files": [
     "dist",

@@ -1,0 +1,33 @@
+---
+title: File Tree
+description: 'The Astro File Tree.'
+banner:
+  content: |
+    This page may not contain all nessasary information!<br />
+    Please go to <a href="https://docs.astroAsset.build">docs.astro.build</a> for all nessasary information.
+---
+import { FileTree } from '@astrojs/starlight/components';
+
+Below is file tree:
+
+<FileTree>
+
+- public
+  - favicon.svg
+- src
+  - components
+    - Card.astro
+  - layouts
+    - Layout.astro
+  - pages
+    - index.astro
+  - env.d.ts
+- .gitignore
+- astro.config.mjs
+- package.json
+- README.md
+- tailwind.config.js only if the tailwind css option was picked
+- tsconfig.json
+</FileTree>
+
+As of now that is the only file tree that can be generated, I hope to have <a href="https://starlight.astro.build">Astro Starlight</a> support soon!

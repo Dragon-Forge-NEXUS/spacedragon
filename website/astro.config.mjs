@@ -10,10 +10,10 @@ export default defineConfig({
 		starlight({
 			title: 'SpaceDragon',
 			social: {
-				github: 'https://github.com/dragon-forge-nexus',
+				github: 'https://github.com/altie122-youtube',
 			},
 			editLink: {
-        baseUrl: 'https://github.com/dragon-forge-nexus/spacedragon/edit/main/docs/',
+        baseUrl: 'https://github.com/altie122-youtube/spacedragon/edit/main/docs/',
       },
 			sidebar: [
 				{
@@ -23,6 +23,11 @@ export default defineConfig({
 						{ label: 'Getting Started', link: '/en/getting-started' },
 						{ label: 'Install Astro using the SpaceDragon CLI', link: '/en/install' },
 					],
+				},
+				{
+					label: 'What\'s Next?',
+					// Autogenerate a group of links for the 'guides' directory.
+					autogenerate: { directory: '/en/next-steps' },
 				},
 				{
 					label: 'Other',

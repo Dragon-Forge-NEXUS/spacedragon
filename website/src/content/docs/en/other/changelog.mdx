@@ -5,6 +5,29 @@ description: 'SpaceDragon Change Log'
 
 # Release
 
+## v1.0.4 & v1.0.5
+Just fixing the `package.json` to change lines 19 to 21's header to be `"csdMetadata": {` not `"ct3aMetadata": {`:
+
+```diff lang="js"
+  // ...
+-  type CT3APackageJSON = PackageJson & {
+-    ct3aMetadata?: {
++  type CSDPackageJSON = PackageJson & {
++    csdMetadata?: {
+      initVersion: string;
+    };
+  };
+    // ...
+    const pkgJson = fs.readJSONSync(
+      path.join(projectDir, "package.json")
+-   ) as CT3APackageJSON;
++   ) as CSDPackageJSON;
+    pkgJson.name = scopedAppName;
+-   pkgJson.ct3aMetadata = { initVersion: getVersion() };
++   pkgJson.ct3aMetadata = { initVersion: getVersion() };
+  // ...
+```
+
 ## v1.0.3
 First release, currently only has tailwind as an option
 
